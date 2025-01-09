@@ -1,6 +1,6 @@
 package ro.uvt.info.sabloaneproiectarelab2024;
 
-class TableOfContents extends Element {
+class TableOfContents implements Element {
     private String content;
 
     public TableOfContents(String content) {

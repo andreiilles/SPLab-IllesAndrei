@@ -3,7 +3,7 @@ package ro.uvt.info.sabloaneproiectarelab2024;
 import java.util.ArrayList;
 import java.util.List;
 
-class Section extends Element {
+class Section implements Element {
     private String title;
     private List<Element> children = new ArrayList<>();
 

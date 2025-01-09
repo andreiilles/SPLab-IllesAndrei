@@ -1,6 +1,6 @@
 package ro.uvt.info.sabloaneproiectarelab2024;
 
-class Image extends Element {
+class Image implements Element {
     private String url;
 
     public Image(String url) {

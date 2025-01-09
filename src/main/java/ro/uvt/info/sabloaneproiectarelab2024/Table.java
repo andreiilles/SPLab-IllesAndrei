@@ -1,6 +1,6 @@
 package ro.uvt.info.sabloaneproiectarelab2024;
 
-class Table extends Element {
+class Table implements Element {
     private String content;
 
     public Table(String content) {
