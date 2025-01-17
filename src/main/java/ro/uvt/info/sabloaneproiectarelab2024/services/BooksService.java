@@ -1,5 +1,4 @@
 package ro.uvt.info.sabloaneproiectarelab2024.services;
-package com.example.books.service;
 
 import ro.uvt.info.sabloaneproiectarelab2024.Book;
 import org.springframework.stereotype.Service;
