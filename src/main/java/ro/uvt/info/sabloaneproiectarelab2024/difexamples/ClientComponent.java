@@ -15,14 +15,13 @@ public class ClientComponent {
 
         this.tc = tc;
         this.sc = sc;
-        System.out.println("ClientComponent::ClientComponent = " + this);
-        System.out.println(" o SingletonComponent = " + sc);
-        System.out.println(" o TransientComponent = " + tc);
+        //System.out.println("ClientComponent::ClientComponent = " + this);
+        //System.out.println(" o SingletonComponent = " + sc);
+        //System.out.println(" o TransientComponent = " + tc);
     }
     public void operation() {
-        System.out.println("Invoked ClientComponent::operation() on " +
-                this);
-        System.out.println(" o SingletonComponent = " + sc);
-        System.out.println(" o TransientComponent = " + tc);
+        //System.out.println("Invoked ClientComponent::operation() on " + this);
+        //System.out.println(" o SingletonComponent = " + sc);
+        //System.out.println(" o TransientComponent = " + tc);
     }
 }

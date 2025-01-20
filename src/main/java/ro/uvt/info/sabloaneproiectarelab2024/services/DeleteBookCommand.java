@@ -1,17 +1,23 @@
 package ro.uvt.info.sabloaneproiectarelab2024.services;
 
+import ro.uvt.info.sabloaneproiectarelab2024.persistence.BooksRepository;
+
 public class DeleteBookCommand implements Command<Boolean> {
 
-    private final BooksService booksService;
-    private final Long bookId;
+    private final BooksRepository booksRepository;
+    private final Integer bookId;
 
-    public DeleteBookCommand(BooksService booksService, Long bookId) {
-        this.booksService = booksService;
+    public DeleteBookCommand(BooksRepository booksRepository, Integer bookId) {
+        this.booksRepository = booksRepository;
         this.bookId = bookId;
     }
 
     @Override
     public Boolean execute() {
-        return booksService.deleteBook(bookId);
+        if (booksRepository.existsById(bookId)) {
+            booksRepository.deleteById(bookId);
+            return true;
+        }
+        return false;
     }
 }

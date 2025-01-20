@@ -1,5 +1,8 @@
 package ro.uvt.info.sabloaneproiectarelab2024;
 
+import jakarta.persistence.ElementCollection;
+
+
 public interface Element {
     void print();
 
