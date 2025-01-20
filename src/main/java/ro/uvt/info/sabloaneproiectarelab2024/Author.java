@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 public class Author {
     @Id
     private Integer id;
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String name;
 
     public Author(String name) {
